@@ -428,7 +428,7 @@ $("#tweet").on({
                 };
                 if($("#tweet").css('top') == '46px'){
                   $("#tweet").stop().animate({top:'-10px'},200);
-                  $("#tweetbutton").fadeIn()
+                  $("#tweetbutton").fadeOut()
                   
                 };}
                       
@@ -463,15 +463,15 @@ $("#tweet").on({
 
     $("#internalwrapper").animate({"bottom": "3100px"}, 1000, function(){
 
-      $("#titleswrapper").animate({"bottom": "2300px"}, 40000, function(){
+      $("#titleswrapper").animate({"bottom": "2300px"}, 35000, "linear", function(){
 
         $("#titleswrapper").css("bottom", "0px")
 
-          $("#titleswrapper").animate({"bottom": "2300px"}, 40000, function (){
+          $("#titleswrapper").animate({"bottom": "2300px"}, 35000, "linear", function (){
 
             $("#titleswrapper").css("bottom", "0px")
 
-            $("#titleswrapper").animate({"bottom": "2300px"}, 40000, function () {
+            $("#titleswrapper").animate({"bottom": "2300px"}, 35000, "linear", function () {
 
               $("#titleswrapper").css("bottom", "548px")
               $("#rightside").css("overflow", "scroll")

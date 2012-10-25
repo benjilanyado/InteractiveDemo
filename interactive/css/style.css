@@ -251,6 +251,11 @@ body {
 	height: 30px;
 }
 
+#copywidth a {
+
+	text-decoration: none;
+}
+
 
 #showcopy {
 	font-size: 18px;
