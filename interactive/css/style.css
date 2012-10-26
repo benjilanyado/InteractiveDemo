@@ -14,7 +14,7 @@
 
 body {
 
-	font-family: "cool-font", arial, sans-serif;
+	font-family: "Futura", "cool-font", arial, sans-serif;
 }	
 
 
@@ -138,6 +138,13 @@ body {
 
 }
 
+#tile2copy a {
+
+	color: orange;
+	text-decoration: none;
+	font-weight: bold;
+}
+
 #tile2h2 {
 
 	font-size: 24px;
@@ -145,11 +152,11 @@ body {
 	font-family: "Futura";
 }
 
-#vidyo {
+.vidyo {
 
 	font-weight: bold;
 	display: inline;
-	color: yellow;
+	color: orange;
 }
 
 #tile2vidbutton {
@@ -618,7 +625,7 @@ leaderp {
 	color: red;
 }
 
-#credh2 {
+.credh2 {
 
 	text-decoration: underline;
 	font-size: 20px;
@@ -948,7 +955,32 @@ leaderp {
 	text-align: center;
 }
 
+/*MEDIA QUERIES*/
 
+
+@media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 480px) {
+
+
+#wrapper {
+
+	margin-top: 0px;
+}	
+
+
+} /*END OF SMARTPHONE MQs*/
+
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) {
+
+#wrapper {
+
+	margin-top: 30px;
+}	
+
+} /*END OF iPAD MQs*/
 
 
 
