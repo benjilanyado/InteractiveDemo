@@ -50,20 +50,20 @@ body {
 #buttons {
 
 	position: absolute;
-	width: 30px;
-	top: 450px;
+	top: 420px;
 	left:10px;
 	z-index: 1;
 }
 
 #buttons img {
 
-	width: 30px;
+	width: 60px;
 	background: rgba(0, 0, 0, 0.4);
 	padding: 10px;
 	float: left;
-	margin-top: 10px;
 }
+
+
 
 #downbutton {
 
@@ -75,6 +75,15 @@ body {
 #upbutton {
 
 	display: none;
+	padding-bottom: 20px;
+	position: absolute;
+	top: -40px;
+}
+
+
+#buttonholder {
+
+	height: 200px;
 }
 
 
@@ -92,7 +101,7 @@ body {
 #smallerfont {
 
 	position: absolute;
-	font-family: "Futura";
+	font-family: "futura-pt";
 	left: 270px;
 	font-size: 20px;
 	background: rgba(0, 0, 0, 0.7);
@@ -113,11 +122,12 @@ body {
 
 #headlineh2 {
 
-	font-family: "Futura";
-	font-size: 71px;
+	font-family: "futura-pt";
+	font-size: 75px;
 	color: white;
 	background: rgba(0, 0, 0, 0.7);
 	padding: 10px;
+	font-weight: bold;
 	
 }
 
@@ -147,9 +157,14 @@ body {
 
 #tile2h2 {
 
-	font-size: 24px;
+	font-size: 35px;
 	padding-bottom: 10px;
-	font-family: "Futura";
+	font-family: "futura-pt";
+}
+
+#tile2p {
+
+	font-size: 15px;
 }
 
 .vidyo {
@@ -198,7 +213,7 @@ body {
 	top: 392px;
 	left: 596px;
 	color: white;
-	font-family: "Futura";
+	font-family: "futura-pt";
 	font-size: 20px;
 }
 
@@ -214,7 +229,7 @@ body {
 	font-size: 30px;
 	padding: 10px;
 	background: rgba(0, 0, 0, 0.9);
-	font-family: "Futura";
+	font-family: "futura-pt";
 }
 
 #font, #size, #customised {
@@ -247,12 +262,12 @@ body {
 
 	position: absolute;
 	width: 300px;
-	left: 80px;
+	left: 100px;
 	top: 180px;
 	padding: 10px;
 	overflow: hidden;
 	background: rgba(0, 0, 0, 0.8);
-	font-family: "Futura";
+	font-family: "futura-pt";
 	color: white;
 	width: 555px;
 	height: 30px;
@@ -265,8 +280,7 @@ body {
 
 
 #showcopy {
-	font-size: 18px;
-	padding: 0px 0px 10px 10px;
+	font-size: 22px;
 	float: left;
 	color: white;
 }
@@ -336,7 +350,7 @@ body {
 	color: white;
 	font-size: 35px;
 	width: 400px;
-	font-family: "Futura";
+	font-family: "futura-pt";
 	background: rgba(0, 0, 0, 0.7);
 	padding: 10px;
 
@@ -398,7 +412,7 @@ body {
 
 #button8 {
 
-	left: 80px;
+	left: 100px;
 	bottom: 200px;
 }
 
@@ -422,7 +436,7 @@ body {
 	color: white;
 	font-size: 20px;
 	display: none;
-	font-family: "Futura"
+	font-family: "futura-pt";
 	
 }
 
@@ -587,7 +601,7 @@ leaderp {
 	right: 10px;
 	width: 80px;
 	color: white;
-	font-family: "Futura";
+	font-family: "futura-pt";
 	background: rgba(0, 0, 0, 0.8);
 }
 
@@ -816,12 +830,12 @@ leaderp {
 	font-size: 20px;
 	text-decoration: none;
 	color: white;
-	font-family: "Futura"
+	font-family: "futura-pt";
 }
 
 #credh2 {
 
-	font-family: "Futura";
+	font-family: "futura-pt";
 	font-size: 30px
 } 
 
@@ -850,9 +864,10 @@ leaderp {
 	color: white;
 	height: 500px;
 	border-right: 2px solid white;
-	font-family: "Futura";
-	font-size: 55px;
-	padding-top: 30px
+	font-family: "futura-pt";
+	font-size: 62px;
+	padding-top: 30px;
+	font-weight: bold;
 
 }
 
@@ -891,6 +906,7 @@ leaderp {
 
 	font-size: 20px;
 	padding-top: 20px;
+	font-weight: normal;
 }
 
 #tweet {
@@ -955,21 +971,74 @@ leaderp {
 	text-align: center;
 }
 
+
+#swivel {
+
+	margin: 0 auto;
+	width: 400px;
+	margin-top: 20px;
+	display: none;
+}
+
+#swivpic {
+
+	width: 200px;
+	text-align: center;
+	margin: 0 auto;
+}
+
+#swivcopy {
+
+	font-size: 50px;
+	text-align: center;
+}
+
+
+
 /*MEDIA QUERIES*/
 
 
-@media only screen 
-and (min-device-width : 320px) 
-and (max-device-width : 480px) {
 
+@media screen and (max-device-width:479px) {
+
+#swivel {
+
+	display: block;
+}
 
 #wrapper {
 
 	margin-top: 0px;
-}	
+}
 
 
-} /*END OF SMARTPHONE MQs*/
+
+} /*END OF SMARTPHONE PORTRAIT MQs*/
+
+
+/*LANDSCAPE*/
+
+@media screen and (min-device-width:480px) and (max-device-width:800px) {
+
+#wrapper {
+
+	margin-top: 0px;
+}
+
+#buttons img {
+
+width: 50px;
+
+}
+
+#swivel {
+
+	display: none;
+}
+
+} /*END OF SMRTPHOEN LANDSCAPE*/
+
+
 
 @media only screen 
 and (min-device-width : 768px) 
@@ -981,6 +1050,16 @@ and (max-device-width : 1024px) {
 }	
 
 } /*END OF iPAD MQs*/
+
+@media screen and (orientation:landscape) {
+
+   #swivel {
+
+	display: none;
+}
+
+}
+
 
 
 

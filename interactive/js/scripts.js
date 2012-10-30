@@ -4,7 +4,7 @@ $(document).ready(function(){
 
 // UP DOWN PANEL CONTROLS
 
-var verticalimages = [	"0px", "630px", "1260px", "1880px", "2520px"];
+var verticalimages = [	"0px", "630px", "1260px", "1880px", "2523px"];
 
 var lightboxCurrent = 0;
 
